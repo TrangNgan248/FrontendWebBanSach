@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 //use App\Http\Controllers\HomeController;
 
@@ -23,3 +24,4 @@ Route::get('/', action: 'HomeController@index')->name('home');
 //     'use' => 'CategoryController@index'
 // ]);
 
+Route::get('/blog', action: 'HomeController@blog')->name('blog');

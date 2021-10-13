@@ -15,11 +15,11 @@
 					<div class="col-sm-6">
 						<div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="{{getConfigValueFromSettingTable('facebook')}}"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="{{getConfigValueFromSettingTable('facebook')}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin" target="_blank"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble" target="_blank"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus" target="_blank"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -43,7 +43,7 @@
 									<span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
-									<li><a href="">Canada</a></li>
+									<li><a href="">Vietnam</a></li>
 									<li><a href="">UK</a></li>
 								</ul>
 							</div>
@@ -54,7 +54,7 @@
 									<span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
-									<li><a href="">Canadian Dollar</a></li>
+									<li><a href="">VND</a></li>
 									<li><a href="">Pound</a></li>
 								</ul>
 							</div>
