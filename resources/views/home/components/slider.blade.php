@@ -1,6 +1,4 @@
-@php 
-$baseUrl = config('app.base_url');
-@endphp
+
 
 <section id="slider">
 
@@ -24,8 +22,8 @@ $baseUrl = config('app.base_url');
 								<button type="button" class="btn btn-default get">Get it now</button>
 							</div>
 							<div class="col-sm-6">
-								<img src="{{$baseUrl . $advert->image_path}} " class="girl img-responsive" alt="" />
-								<img src="eshopper/images/home/pricing.png" class="pricing" alt="" />
+								<img src="{{config('app.base_url') . $advert->image_path}} " class="girl img-responsive" alt="" />
+								<!-- <img src="eshopper/images/home/pricing.png" class="pricing" alt="" /> -->
 							</div>
 						</div>
 						@endforeach

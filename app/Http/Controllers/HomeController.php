@@ -20,9 +20,4 @@ class HomeController extends Controller
         return view('home.home', compact('adverts', 'danhmucsaches', 'saches', 'productsRecommend'));
     }
 
-    public function blog()
-    {  
-        $danhmucsaches = Category::where('DMS_parentId', 0)->get();
-        return view('Blog.blog', compact('danhmucsaches'));
-    }
 }

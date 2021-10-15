@@ -15,9 +15,9 @@
 					<div class="col-sm-6">
 						<div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="{{getConfigValueFromSettingTable('facebook')}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin" target="_blank"></i></a></li>
+								<li><a href="{{getConfigValueFromSettingTable('facebook_link')}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="{{getConfigValueFromSettingTable('twitter_link')}}" target="_blank"><i class="fa fa-twitter" ></i></a></li>
+								<li><a href="{{getConfigValueFromSettingTable('linkedin_link')}}" target="_blank"><i class="fa fa-linkedin" ></i></a></li>
 								<li><a href="#"><i class="fa fa-dribbble" target="_blank"></i></a></li>
 								<li><a href="#"><i class="fa fa-google-plus" target="_blank"></i></a></li>
 							</ul>
@@ -39,22 +39,22 @@
 						<div class="btn-group pull-right clearfix">
 							<div class="btn-group">
 								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									USA
+									Vietnam
 									<span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
-									<li><a href="">Vietnam</a></li>
+									<li><a href="">USA</a></li>
 									<li><a href="">UK</a></li>
 								</ul>
 							</div>
 
 							<div class="btn-group">
 								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									DOLLAR
+									VND
 									<span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
-									<li><a href="">VND</a></li>
+									<li><a href="">Dollar</a></li>
 									<li><a href="">Pound</a></li>
 								</ul>
 							</div>

@@ -21,7 +21,7 @@
 				<div class="product-image-wrapper">
 					<div class="single-products">
 						<div class="productinfo text-center">
-							<img src="{{config('app.base_url') . $productItemTab->S_Anh}}" alt=""/>
+							<img id = "booktab" src="{{config('app.base_url') . $productItemTab->S_ViTri}}" alt=""/>
 							<h2>{{$productItemTab->S_GiaBan}}</h2>
 							<p>{{$productItemTab->S_Ten}}</p>
 							<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>

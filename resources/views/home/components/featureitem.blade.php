@@ -1,3 +1,5 @@
+
+
 <div class="features_items">
 	<h2 class="title text-center">Features Books</h2>
 	@foreach($saches as $sach)
@@ -5,7 +7,7 @@
 		<div class="product-image-wrapper">
 			<div class="single-products">
 				<div class="productinfo text-center">
-					<img src="{{config('app.base_url') . $sach->S_Anh}}" alt="" height="320px"/>
+					<img id = "bookfeature" src="{{config('app.base_url') . $sach->S_ViTri}}" alt="" />
 					<h2>{{number_format($sach->S_GiaBan)}} VND</h2>
 					<p>{{$sach->S_Ten}}</p>
 					<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>

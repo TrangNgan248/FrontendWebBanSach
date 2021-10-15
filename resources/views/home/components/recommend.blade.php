@@ -14,7 +14,7 @@
                     <div class="product-image-wrapper">
                         <div class="single-products">
                             <div class="productinfo text-center">
-                                <img src="{{config('app.base_url') . $productsRecommendItem->S_Anh}}" alt="" />
+                                <img id= "bookrecommend" src="{{config('app.base_url') . $productsRecommendItem->S_ViTri}}" alt="" height="200px"/>
                                 <h2>{{number_format($productsRecommendItem->S_GiaBan)}}</h2>
                                 <p>{{$productsRecommendItem->S_Ten}}</p>
                                 <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>

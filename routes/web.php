@@ -24,4 +24,9 @@ Route::get('/', action: 'HomeController@index')->name('home');
 //     'use' => 'CategoryController@index'
 // ]);
 
-Route::get('/blog', action: 'HomeController@blog')->name('blog');
+Route::get('/blog', action: 'BlogController@blog')->name('blog');
+
+Route::get('/category/{id}',[
+    'as' => 'category.product',
+    'uses' => 'CategoryController@index'
+]);
