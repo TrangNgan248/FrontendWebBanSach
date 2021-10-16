@@ -26,6 +26,8 @@ Route::get('/', action: 'HomeController@index')->name('home');
 
 Route::get('/blog', action: 'BlogController@blog')->name('blog');
 
+Route::get('/contact', action: 'ContactController@contact')->name('contact');
+
 Route::get('/category/{id}',[
     'as' => 'category.product',
     'uses' => 'CategoryController@index'

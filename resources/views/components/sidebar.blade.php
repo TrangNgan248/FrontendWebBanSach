@@ -15,7 +15,7 @@
 							{{$danhmucsach->DMS_Tieude}}
 						</a>
 						@else
-						<a href="{{route('category.product', ['slug' => $categoryChildren->slug, 'id' => $categoryChildren->id])}}">
+						<a href="{{route('category.product', ['slug' => $danhmucsach->slug, 'id' => $danhmucsach->id])}}">
 							<span class="badge pull-right">
 							</span>
 							{{$danhmucsach->DMS_Tieude}}

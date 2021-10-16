@@ -46,7 +46,7 @@
 								</span>
 							</div>
 							<a href="">
-								<img src="{{config('app.base_url') . $tintuc->TT_Anh}}" alt="">
+								<img src="{{config('app.base_url') . $tintuc->TT_paths}}" alt="">
 							</a>
 							<p>{{$tintuc->TT_HienThi}}</p>
 							<a class="btn btn-primary" href="">Read More</a>
