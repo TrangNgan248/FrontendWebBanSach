@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
@@ -25,9 +26,9 @@ class RegisterController extends Controller
             'KH_HoTen' => $request->name,
             'KH_Email' => $request->email,
             'KH_DienThoai' => $request->phoneNumber,
-            'password' => $request->password,
+            'password' => Hash::make( $request->password),
         ]);
-
+        dd(auth()->attempt($request->only(['KH_Email'=>$request->email, 'password'=>$request->password])));
         auth()->attempt($request->only(['KH_Email'=>$request->email, 'password'=>$request->password]));
 
         //redirect
