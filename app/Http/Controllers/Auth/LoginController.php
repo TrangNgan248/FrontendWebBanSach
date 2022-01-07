@@ -23,7 +23,7 @@ class LoginController extends Controller
         if (Auth::attempt(['KH_Email' => $request->email, 'password' => $request->password])) {
             $request->session()->regenerate();
 
-            return redirect()->route('home');
+            return redirect()->route('blog');
         }
 
         return back()->withErrors([
