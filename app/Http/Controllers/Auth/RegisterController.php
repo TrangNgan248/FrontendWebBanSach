@@ -16,7 +16,7 @@ class RegisterController extends Controller
     public function store(Request $request){
         $this->validate($request, [
             'name' => 'required|max:255',
-            'email' => 'required|email',
+            'email' => 'required|email|unique:khachhangs,KH_Email',
             'phoneNumber' =>'required|max:20',
             'password' => 'required|min:6|confirmed',
         ]);
@@ -28,8 +28,8 @@ class RegisterController extends Controller
             'KH_DienThoai' => $request->phoneNumber,
             'password' => Hash::make( $request->password),
         ]);
-        dd(auth()->attempt($request->only(['KH_Email'=>$request->email, 'password'=>$request->password])));
-        auth()->attempt($request->only(['KH_Email'=>$request->email, 'password'=>$request->password]));
+
+        auth()->attempt(['KH_Email' => $request->email, 'password' => $request->password]);
 
         //redirect
         return redirect()->route('home');
